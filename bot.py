@@ -24,9 +24,9 @@ async def handle_query(client, query):
      up = response['url']
      if up:
       but = [[InlineKeyboardButton("Generate again ✨", callback_data=f'again')],
-             [InlineKeyboardButton("Source Code 🌺", url=f'https://github.com/prime-hritu/Anime-Generator-Bot')]]
+             [InlineKeyboardButton("Owner 🌺", url=f'https://t.me/Hacker_vasi')]]
       markup = InlineKeyboardMarkup(but)
-      await query.message.reply_photo(up,caption="**@AIanimeGenBot**",reply_markup=markup)
+      await query.message.reply_photo(up,caption="**@VasiAnimebot**",reply_markup=markup)
      else:
       await query.message.reply("Request failed try /again")
     		
